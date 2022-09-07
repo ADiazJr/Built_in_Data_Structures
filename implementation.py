@@ -4,8 +4,11 @@ def pi_month():
     print(months_of_year[2])
 #1b)
 def print_fruits_or_veggies():
-    fruits_or_veggies = ['apple', 'banana', 'tomato', 'lettuce', 'strawberry']
-    fruits_or_veggies.extend(['mango', 'grape', 'eggplant', 'pepper'])
+    fruits_or_veggies = {'apple', 'banana', 'tomato', 'lettuce', 'strawberry'}
+    fruits_or_veggies.add('mango')
+    fruits_or_veggies.add('grape')
+    fruits_or_veggies.add('eggplant')
+    fruits_or_veggies.add('pepper')
     for item in fruits_or_veggies:
         print(item)
 
