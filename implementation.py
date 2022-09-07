@@ -3,14 +3,16 @@ def pi_month():
     months_of_year = ('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december')
     print(months_of_year[2])
 #1b)
-def print_fruits_or_veggies():
-    fruits_or_veggies = {'apple', 'banana', 'tomato', 'lettuce', 'strawberry'}
-    fruits_or_veggies.add('mango')
-    fruits_or_veggies.add('grape')
-    fruits_or_veggies.add('eggplant')
-    fruits_or_veggies.add('pepper')
-    for item in fruits_or_veggies:
-        print(item)
+class fruits_or_veggies():
+    def __init__(self) -> None:
+        self.set_of_items = {'apple', 'banana', 'tomato', 'lettuce', 'strawberry'}
+    
+    def add_item(self, name):
+        self.set_of_items.add(name)
+
+    def print_fruits_or_veggies(self):
+        for item in self.set_of_items:
+            print(item)
 
 #1c)
 def print_user_profile():
