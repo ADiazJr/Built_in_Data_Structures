@@ -1,10 +1,14 @@
 # Task 1a)
+class MonthsOfYear():
+    def __init__(self):
+        self.months_of_year = ('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december')
+
 def pi_month():
     months_of_year = ('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december')
     print(months_of_year[2])
 #1b)
-class fruits_or_veggies():
-    def __init__(self) -> None:
+class FruitsOrVeggies():
+    def __init__(self):
         self.set_of_items = {'apple', 'banana', 'tomato', 'lettuce', 'strawberry'}
     
     def add_item(self, name):
