@@ -1,6 +1,6 @@
-from dataclasses import field
 import implementation
 from linked_list import LinkedList
+from binary_node import BinaryNode
 
 # implementation.pi_month()
 # list_object = implementation.FruitsOrVeggies()
@@ -20,5 +20,18 @@ def main():
     print(first_list)
     print(first_list.search_list(341))
     print(first_list.search_list(3441))
+
+    binary_tree = BinaryNode(1000)
+    binary_tree.insert_node(500)
+    binary_tree.insert_node(1500)
+    binary_tree.insert_node(250)
+    binary_tree.insert_node(1250)
+    binary_tree.insert_node(750)
+    print(binary_tree.search_for_node(1500))
+    print(binary_tree.search_for_node(750))
+    print(binary_tree.search_for_node(3402))
+    
+    binary_tree.inorder(binary_tree)
+    binary_tree.preorder(binary_tree)
 
 main()

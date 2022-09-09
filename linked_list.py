@@ -21,11 +21,9 @@ class LinkedList():
 
     def search_list(self, search_value):
         search_comparison = self.head
-        while search_comparison.next is not None:
+        while search_comparison is not None:
             if search_value == search_comparison.value:
                 return True
             else: 
                 search_comparison = search_comparison.next
-        if search_value == self.tail.value:
-            return True
         return False
